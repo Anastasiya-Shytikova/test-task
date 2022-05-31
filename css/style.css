@@ -1,4 +1,51 @@
-.wy-body {
-    margin-right: 200px;
-    background-color: aqua;
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+.btn {
+    position: absolute;
+    width: 63px;
+    height: 35px;
+    left: 179px;
+    top: 0px;
+    background: #3E66FB;
+    border-radius: 6px;
+    border: 0px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.select {
+    box-sizing: border-box;
+    position: absolute;
+    background: #FFFFFF;
+    border: 1px solid #ADB5BD;
 }
