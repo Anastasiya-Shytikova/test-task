@@ -22,6 +22,13 @@ h6 {
     font-size: inherit;
 }
 
+.container {
+    max-width: 1195px;
+    padding: 0px 15px;
+    margin: 0px auto;
+    box-sizing: content-box;
+}
+
 .btn {
     position: absolute;
     width: 63px;
@@ -43,9 +50,68 @@ h6 {
     color: #FFFFFF;
 }
 
-.select {
-    box-sizing: border-box;
-    position: absolute;
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.dataTables_select {
+    /* box-sizing: border-box;
+    position: absolute; */
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
     background: #FFFFFF;
     border: 1px solid #ADB5BD;
+}
+
+.select {
+    /* position: absolute; */
+    width: 95px;
+    left: 10px;
+    top: calc(50% - 12px/2 - 0.5px);
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    /* identical to box height, or 12px */
+    display: flex;
+    align-items: center;
+    color: #495057;
+}
+
+.dataTables_status {
+    /* box-sizing: border-box;
+    position: absolute; */
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #FFFFFF;
+    border: 1px solid #ADB5BD;
+}
+
+.status {
+    /* position: absolute; */
+    width: 115px;
+    left: 10px;
+    top: calc(50% - 12px/2 - 0.5px);
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    /* identical to box height, or 12px */
+    display: flex;
+    align-items: center;
+    color: #495057;
+}
+
+.display_table {
+    height: 40px;
+    background-color: #DEE2E6;
 }

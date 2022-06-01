@@ -7,60 +7,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="./js/index.js"></script>
 
 </head>
 
 <body>
-    <table id="my_table" class="display">
-
-        <button class="btn">Apply</button>
-
-        <div class="dataTables_length" id="my_table_length">
-            <label> <select name="my_table_length" aria-controls="my_table" class="">
-                <option value="Select a category">Select a category</option>
-                <option value="Books">Books</option>
-                <option value="Simulations">Simulations</option>
-                <option value="50">50</option>
-                <option value="100">100</option>
-            </select> entries</label>
+    <div id="my_table_wrapper
+    " class="dataTables_wrapper no-footer container">
+        <div class="navigation">
+            <div class="dataTables_length" id="my_table_length"></div>
+            <button class="btn">Apply</button>
+            <div class="dataTables_select" id="my_table_length">
+                <select name="my_table_select" aria-controls="my_table" class="select">
+                        <option value="Select a category">Select a category</option>
+                        <option value="Books">Books</option>
+                        <option value="Simulations">Simulations</option>
+                        <option value="Membership">Membership</option>
+                    </select>
+            </div>
+            <div class="dataTables_status" id="my_table_length">
+                <select name="my_table_length" aria-controls="my_table" class="status">
+                        <option value="Select a category">Filter by stock status</option>
+                        <option value="In stock">In stock</option>
+                        <option value="Out of stock">Out of stock</option>
+                    </select>
+            </div>
+            <div id="my_table_filter" class="dataTables_filter"></div>
         </div>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Image</th>
-                <th>Product name</th>
-                <th>Category</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Row 1 Data 1</td>
-                <td>Row 1 Data 2</td>
-                <td>Row 1 Data 3</td>
-                <td>Row 1 Data 4</td>
-                <td>Row 1 Data 5</td>
-                <td>Row 1 Data 6</td>
-                <td>Row 1 Data 7</td>
-            </tr>
-            <tr>
-                <td>Row 2 Data 1</td>
-                <td>Row 2 Data 2</td>
-                <td>Row 2 Data 3</td>
-                <td>Row 2 Data 4</td>
-                <td>Row 2 Data 5</td>
-                <td>Row 2 Data 6</td>
-                <td>Row 2 Data 7</td>
-            </tr>
-        </tbody>
-    </table>
-    <script src="./js/index.js"></script>
+        <table id="my_table" class="display dataTable no-footer" aria-describedby="my_table_info">
+            <thead class="display_table">
+                <tr>
+                    <th class="sorting sorting_asc" tabindex="0" aria-controls="my_table" rowspan="1" colspan="1" aria-sort="ascending" aria-label="ID: activate to sort column descending" style="width: 107px;">ID</th>
+                    <th class="sorting" tabindex="0" aria-controls="my_table" rowspan="1" colspan="1" aria-label="Image: activate to sort column ascending" style="width: 107px;">Image</th>
+                    <th class="sorting" tabindex="0" aria-controls="my_table" rowspan="1" colspan="1" aria-label="Product name: activate to sort column ascending" style="width: 139px;">Product name</th>
+                    <th class="sorting" tabindex="0" aria-controls="my_table" rowspan="1" colspan="1" aria-label="Category: activate to sort column ascending" style="width: 107px;">Category</th>
+                    <th class="sorting" tabindex="0" aria-controls="my_table" rowspan="1" colspan="1" aria-label="Price: activate to sort column ascending" style="width: 107px;">Price</th>
+                    <th class="sorting" tabindex="0" aria-controls="my_table" rowspan="1" colspan="1" aria-label="Quantity: activate to sort column ascending" style="width: 107px;">Quantity</th>
+                    <th class="sorting" tabindex="0" aria-controls="my_table" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 108px;">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td class="sorting_1">Row 1 Data 1</td>
+                    <td>Row 1 Data 2</td>
+                    <td>Row 1 Data 3</td>
+                    <td>Row 1 Data 4</td>
+                    <td>Row 1 Data 5</td>
+                    <td>Row 1 Data 6</td>
+                    <td>Row 1 Data 7</td>
+                </tr>
+                <tr class="even">
+                    <td class="sorting_1">Row 2 Data 1</td>
+                    <td>Row 2 Data 2</td>
+                    <td>Row 2 Data 3</td>
+                    <td>Row 2 Data 4</td>
+                    <td>Row 2 Data 5</td>
+                    <td>Row 2 Data 6</td>
+                    <td>Row 2 Data 7</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
 </body>
 
 </html>
