@@ -14,16 +14,17 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-    <script src="./js/index.js"></script>
+
+
 
 </head>
 
 <body>
     <div id="my_table_wrapper
     " class="dataTables_wrapper no-footer container">
-        <div class="navigation">
+        <!-- <div class="navigation">
             <div class="dataTables_length" id="my_table_length"></div>
-            <button class="btn">Apply</button>
+
             <div class="dataTables_select" id="my_table_length">
                 <select name="my_table_select" aria-controls="my_table" class="select">
                         <option value="Select a category">Select a category</option>
@@ -40,8 +41,9 @@
                     </select>
             </div>
             <div id="my_table_filter" class="dataTables_filter"></div>
-        </div>
+        </div> -->
         <table id="my_table" class="display dataTable no-footer" aria-describedby="my_table_info">
+            <!-- <button class="applyButton">Apply</button> -->
             <thead class="display_table">
                 <tr>
                     <th class="sorting sorting_asc" tabindex="0" aria-controls="my_table" rowspan="1" colspan="1" aria-sort="ascending" aria-label="ID: activate to sort column descending" style="width: 107px;">ID</th>
@@ -72,11 +74,11 @@
                     <td>Row 2 Data 6</td>
                     <td>Row 2 Data 7</td>
                 </tr>
-
             </tbody>
         </table>
 
     </div>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

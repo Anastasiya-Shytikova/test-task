@@ -115,3 +115,8 @@ h6 {
     height: 40px;
     background-color: #DEE2E6;
 }
+
+.applyButton {
+    background-color: black;
+    color: rgb(206, 25, 25);
+}
