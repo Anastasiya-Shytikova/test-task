@@ -1,0 +1,8 @@
+{
+    "dependencies": {
+        "datatables.net-buttons": "^2.2.3",
+        "datatables.net-buttons-dt": "^2.2.3",
+        "datatables.net-rowgroup": "^1.2.0",
+        "datatables.net-rowgroup-dt": "^1.2.0"
+    }
+}
